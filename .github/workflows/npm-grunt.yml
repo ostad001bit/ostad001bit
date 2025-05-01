@@ -27,7 +27,7 @@ jobs:
         npm install
         grunt
 module.exports = function(grunt) {
-
+module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -47,8 +47,8 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['uglify']);
-
-};{
+};
+{
   "name": "my-project-name",
   "version": "0.1.0",
   "devDependencies": {
@@ -57,15 +57,4 @@ module.exports = function(grunt) {
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "~0.5.0"
   }
-}// Load the plugin that provides the "uglify" task.
-grunt.loadNpmTasks('grunt-contrib-uglify');
-grunt.registerTask('default', ['uglify']);
-module.exports = function(grunt) {
-
-  // A very basic default task.
-  grunt.registerTask('default', 'Log some stuff.', function() {
-    grunt.log.write('Logging some stuff...').ok();
-  });
-
-};
-
+}
